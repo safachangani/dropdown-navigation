@@ -30,5 +30,22 @@ $(document).ready(function(){
              $('.list-two').toggle("slide")
         })
     }) 
+        $("#menu").click(function(){
+        $(".container").css({
+            "opacity":"90%",
+            'background-color':'hsl(0, 0%, 41%)'
+        })
+    })
+    $("#cross").click(function(){
+        $(".container").css({
+            "opacity":"unset",
+            'background-color':'hsl(0, 0%, 98%)'
+        })
+    })
+    $("#menu").click(function(){
+        $(".sidebar").css({
+            'z-index':"11"
+        })
+    })
    
 })
