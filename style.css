@@ -1,0 +1,338 @@
+
+body{
+    margin: 1.5rem;
+    font-size: 18px;
+    font-family: 'Epilogue', sans-serif;
+    background-color: hsl(0, 0%, 98%);
+}
+.container{
+    display: unset;
+}
+#snap{
+    font-weight: 700;
+    font-size: 2rem;
+    float: left;
+    padding-top: 1.5rem;
+    margin-top: -2rem;
+    
+}
+#menu{
+    display: none;
+}
+#cross{
+    display: none;
+}
+.sidebar{
+  display: flex;
+  position: absolute;
+  margin-left: 8rem;
+  width: 86%;
+  font-size: .9rem;
+  color:hsl(0, 0%, 41%);
+}
+.select-one,.select-two,.text,#login{
+    margin-right: 1rem;
+    cursor: pointer;
+}
+#login{
+    margin-left: auto;
+}
+.item-one,.item-two{
+    display: none;
+}
+.item-two{
+    margin-left: 1rem;
+    margin-top: 1rem;
+}
+.list{
+    position: absolute;
+    font-size: .7rem;
+    background-color:white;
+    font-weight: 100;
+   
+ 
+    border-radius: .5rem;
+  
+    margin-top: 0.5rem;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+    display: none;
+
+}
+.list-one{
+    height: 8rem;
+    width: 8rem;
+    margin-left: -3.5rem;
+}
+.list-two{
+    height: 6rem; 
+    width: 6rem;
+    margin-left: -0.05rem;
+}
+h4{
+    margin-left: 2.4rem;
+    font-weight: 100;
+}
+.list>div>img {
+    height: 0.8rem;
+    float: left;
+    margin-left: 1rem;
+
+}
+#image-hero-mobile{
+    display: none;
+}
+#image-hero{
+    margin-top: 3rem;
+    width: 26%;
+    object-fit: cover;
+    margin-left: 44rem;
+    height: 26rem;
+    background-repeat: no-repeat;
+}
+h1{
+    margin-left:0;
+    margin-top: -20rem;
+    padding-left: 6rem;
+    font-size: 3rem;
+    padding-right: 48rem;
+}
+p{
+    padding-right: 40rem;
+    padding-left: 6rem;
+    color:hsl(0, 0%, 41%);
+    line-height: 1.5rem;
+    font-size: 18px;
+    margin: 0;
+   
+}
+input{
+    margin-left: 5.8rem;
+    padding: .7rem 2rem;
+    background-color: black;
+    color: white;
+    border-radius: 1rem;
+    font-size: 1rem;
+    font-weight: 700;
+    margin-top: 1rem;
+    position: fixed;
+    cursor: pointer;
+}
+#databiz,#maker,#meet,#audiophile{
+    width: 5%;
+    margin-top: 6rem;
+    margin-left: 2rem;
+}
+#databiz{
+    margin-left: 5.5rem;
+}
+button{
+    border-radius: 0.5rem;
+    font-size: unset; 
+    width: unset; 
+    height:unset;
+    margin:unset; 
+    border-color: hsl(0, 0%, 8%);
+    padding: 0.4rem 0.6rem;
+    margin-top: -0.5rem;
+    border-width: thin;
+    font-family: 'Epilogue', sans-serif;
+    color:hsl(0, 0%, 41%);
+    background-color:  hsl(0, 0%, 98%);
+    cursor: pointer;
+  }
+  input:hover{
+    background-color:  hsl(0, 0%, 98%);
+    color: black;
+    border-width: thin;
+  }
+@media screen and (max-width:40em) {
+
+    body{
+       margin: 0;
+    }
+    .sidebar{
+        right:-100% ;
+        width: 75%;
+        background-color: rgb(241, 236, 236);
+        position:fixed;
+        height: 100%;
+        color:hsl(0, 0%, 41%);
+        transition: all .2s ease;
+        overflow-y: auto;
+        font-weight: 600;
+        margin: unset;
+        padding: unset;
+        align-items:unset;
+        display: block;
+        font-size: 1.3rem;
+    }
+    .sidebar.active{
+        right: 0;
+        top: 0;
+    }
+    .icon-menu{
+        right: 0;
+        position: absolute; 
+        margin: 2rem;
+        height: 1.5rem;
+       
+    }
+    #cross{
+        display: block;
+        height: 2rem;
+        width: 2rem;
+    }
+    .select-one,.select-two{
+        padding-left:1.5rem ;
+        
+    }
+    .list{
+        font-weight: 600;
+        align-items: center;
+        margin-top: 1rem;
+        margin-top: 1.5rem;
+        position: unset;
+        font-size: unset;
+        background-color: unset;
+        border-radius: unset;
+        margin-top:unset;
+        box-shadow: unset;
+    }
+    .item-one,.item-two{
+        margin-left: 2rem;
+        display: none;
+    }
+    .select-one{
+        margin-top: 4rem;
+        margin-bottom: 2rem;
+    }
+    .text{
+        padding-left:1.5rem ;
+        margin-top:1.5rem ;
+    }
+    #img-one,#img-two{ 
+        height: 0.5rem;
+        padding-left: 1rem;
+        
+    }
+    #login{
+       text-align: center; 
+       margin-top: 2rem;
+    }
+    button{
+      background-color:  hsl(0, 0%, 98%);
+      border-radius: 1rem;
+      font-size: 20px;
+      width: 15rem;
+      height: 3rem;
+      margin: 2rem;
+      border-color: hsl(0, 0%, 8%);
+      border-width: initial;
+    }
+    .list>div>img{
+        height: 1.3rem;
+        float: left;
+    }
+    h4{
+        padding-left: 1rem;
+        margin: 1.5rem;
+        font-weight:unset;
+    }
+    .item-two{
+    margin-top: 1.5rem;
+    padding-left: 1rem;
+    }
+    #menu{
+        display: block;
+        right: 0;
+        grid-column: 4/5;
+        height: 1.5rem;
+        margin: 1rem;
+    }
+    #snap{
+        grid-column: 1/2;
+        font-size:2rem;
+        margin: 1rem;
+        margin-top: 0.5rem;
+        padding: unset;
+    }
+    .container{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        margin:0 auto;
+    }
+    #image-hero{
+        display: none;
+    }
+    #image-hero-mobile{
+        height: 19.5rem;
+        grid-column: 1/5;
+        margin: auto;
+        object-fit: cover;
+        width: 100%;
+        margin-top:1rem;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        display: block;
+    }
+    h1{
+        grid-column: 1/5;
+        text-align: center;
+        margin-top: 3rem;
+        padding-right: unset;
+        padding-left:unset;
+        font-size:2rem;
+    }
+    p{
+        grid-column: 1/5;
+        text-align: center;
+        color:hsl(0, 0%, 41%);
+        line-height: 1.5rem;
+        font-size: 17px;
+        margin: 0;
+        padding-left: unset;
+        padding-right: unset;
+        font-weight: 600;
+    }
+    input{
+     grid-column: 2/4;  
+    padding: 1rem;
+     background-color: black;
+     color: white;
+     border-radius: 1rem;
+    font-size: 1rem;
+    font-weight: 700;
+    margin-top: 2rem;
+    position: unset;
+    margin-left: unset;
+    }
+    #databiz{
+        grid-column: 1/2;
+    }
+    #audiophile{
+        grid-column: 2/3;   
+    }
+    #meet{
+        grid-column: 3/4;  
+    }
+    #maker{
+        grid-column: 4/5;  
+    }
+    .list-one{
+        height:unset;
+        width: unset;
+        margin-left: unset;
+    }
+    .list-two{
+        height:unset;
+        width: unset;
+        margin-left: unset;
+    }
+    #databiz,#maker,#meet,#audiophile{
+      
+        margin: 1rem;
+        margin-top: 2rem;
+        width: 65%;
+    }
+    }
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap');
